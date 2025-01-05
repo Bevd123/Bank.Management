@@ -88,7 +88,6 @@ namespace ClassLibrary
 
         public static Bank Laden(string file)
         {
-            // Deserialisierung
             string jsonString = File.ReadAllText(file);
             Bank deserializedObj = JsonSerializer.Deserialize<Bank>(jsonString) ?? new("was");
 
